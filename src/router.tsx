@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { AppProvider } from "./providers";
 import { AuthLayout } from "./layouts";
-import { ROUTE_PATH } from "./constants/routePath";
+import { ROUTE_PATH } from "./constants";
 import { Login } from "./pages";
 
 const Router = () => {
