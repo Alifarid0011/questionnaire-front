@@ -111,7 +111,7 @@
 
 @layer base {
   body {
-    @apply text-right font-[200];
+    @apply text-left font-[200];
     font-family:  outfitDigits;
   }
 }

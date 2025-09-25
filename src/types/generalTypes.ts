@@ -1,5 +1,16 @@
 import type { HTMLAttributes } from "react";
 
+type TInputTypes = "text" | "date" | "number" | "select" | "password";
+
+export interface IInputs<T> {
+  name: T;
+  label: string;
+  placeholder?: string;
+  type: TInputTypes;
+  isRequired: boolean;
+  hint?: string;
+}
+
 export type TParagraphVariants =
   | "display1"
   | "display2"
@@ -25,3 +36,18 @@ export interface ITreeDotsLoading extends HTMLAttributes<HTMLDivElement> {
 export interface IIconProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
 }
+
+export type TParagraphComponents =
+  | "h1"
+  | "h2"
+  | "h3"
+  | "h4"
+  | "h5"
+  | "h6"
+  | "p"
+  | "span";
+
+// auth
+export type TLoginFormInputsName = "national_code" | "password" ;
+
+export type TLoginFormInitialValues = Record<TLoginFormInputsName, string>;

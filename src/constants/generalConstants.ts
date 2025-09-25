@@ -20,3 +20,27 @@ export const TYPOGRAPHY_STYLES: Record<
   caption2: "font-[300] text-xs leading-4",
   caption3: "font-[200] text-xs leading-4",
 };
+
+// auth
+export const LOGIN_FORM_INPUTS: GeneralTypes.IInputs<GeneralTypes.TLoginFormInputsName>[] =
+  [
+    {
+      name: "national_code",
+      isRequired: true,
+      label: "user name",
+      placeholder: "1250347829",
+      type: "text",
+    },
+    {
+      name: "password",
+      isRequired: true,
+      label: "password",
+      placeholder: "********",
+      type: "password",
+    },
+  ];
+
+export const LOGIN_FORM_INITIAL_VALUE: GeneralTypes.TLoginFormInitialValues = {
+  national_code: "",
+  password: "",
+};
