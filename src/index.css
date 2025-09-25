@@ -1,1 +1,168 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 100;
+  src: url("/fonts/dana/woff2/DanaFaNum-Light.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("/fonts/dana/woff/DanaFaNum-Light.woff")
+      format("woff");
+  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/dana/woff2/DanaFaNum-Regular.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/
+      url("/fonts/dana/woff/DanaFaNum-Regular.woff") format("woff");
+  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/dana/woff2/DanaFaNum-Medium.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("/fonts/dana/woff/DanaFaNum-Medium.woff")
+      format("woff");
+  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+  font-family: dana;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/dana/woff2/DanaFaNum-Bold.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("/fonts/dana/woff/DanaFaNum-Bold.woff")
+      format("woff");
+  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+  font-family: "outfitDigits";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/outfit/Outfit-Light.ttf") format("truetype");
+  /* unicode-range: U+0030-0039; */
+}
+
+@font-face {
+  font-family: "outfitDigits";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/outfit/Outfit-Regular.ttf") format("truetype");
+  /* unicode-range: U+0030-0039; */
+}
+
+@font-face {
+  font-family: "outfitDigits";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/outfit/Outfit-Medium.ttf") format("truetype");
+  /* unicode-range: U+0030-0039; */
+}
+
+@font-face {
+  font-family: "outfitDigits";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/outfit/Outfit-Bold.ttf") format("truetype");
+  /* unicode-range: U+0030-0039; */
+}
+
+
+@theme {
+  --color-primary-10: #cff724;
+  --color-primary-20: #4caf50;
+  --color-primary-50: #f0f6fe;
+  --color-primary-100: #adcbfb;
+  --color-primary-200: #7cacf8;
+  --color-primary-300: #4c8df6;
+  --color-primary-400: #1b6ff3;
+  --color-primary-500: #0b57d0;
+  --color-primary-550: #0b2c6e;
+  --color-primary-600: #0843a0;
+  --color-primary-700: #062f6f;
+  --color-primary-800: #031a3f;
+
+  --color-secondary-50: #ecf8f2;
+  --color-secondary-100: #ceeede;
+  --color-secondary-200: #a8e1c5;
+  --color-secondary-300: #82d4ac;
+  --color-secondary-400: #5cc792;
+  --color-secondary-500: #3db178;
+  --color-secondary-600: #308c5f;
+  --color-secondary-700: #236645;
+  --color-secondary-800: #16402c;
+
+  --color-gray-0: #ffffff;
+  --color-gray-50: #fafafa;
+  --color-gray-100: #f5f5f5;
+  --color-gray-200: #eeeeee;
+  --color-gray-300: #e0e0e0;
+  --color-gray-400: #bdbdbd;
+  --color-gray-500: #757575;
+  --color-gray-600: #424242;
+  --color-gray-700: #212121;
+  --color-gray-1000: #000000;
+
+  --color-natural-100: #f8fafd;
+  --color-natural-200: #f3f7fe;
+  --color-natural-300: #eaf1fb;
+  --color-natural-400: #e9eef6;
+  --color-natural-500: #e3ebf6;
+  --color-natural-600: #d1d8e2;
+  --color-natural-700: #abb5c6;
+  --color-natural-800: #3d3c45;
+
+  --color-error-100: #fdeeec;
+  --color-error-200: #f9c2be;
+  --color-error-300: #f49790;
+  --color-error-400: #ef6b61;
+  --color-error-500: #eb4235;
+  --color-error-600: #d52315;
+  --color-error-700: #a71b11;
+  --color-error-800: #79140c;
+
+  --color-warning-50: #fffbf0;
+  --color-warning-100: #fff2cc;
+  --color-warning-200: #ffe599;
+  --color-warning-300: #ffd966;
+  --color-warning-400: #ffcc33;
+  --color-warning-500: #ffbf00;
+  --color-warning-600: #cc9900;
+  --color-warning-700: #997300;
+  --color-warning-800: #664c00;
+
+  --color-pale-100: #0000008c;
+  --color-pale-200: #00000029;
+
+  --animate-spin-reverse: spin 1s linear infinite reverse;
+}
+
+::-moz-selection {
+  @apply bg-primary-10 text-black;
+}
+
+::selection {
+  @apply bg-primary-10 text-black;
+}
+
+@layer base {
+  body {
+    @apply text-right font-[200];
+    font-family: dana, outfitDigits;
+  }
+}
+
+* {
+  @apply outline-0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
