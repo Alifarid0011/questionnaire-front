@@ -7,7 +7,7 @@ import {
 import { AppProvider } from "./providers";
 import { AppLayout, AuthLayout } from "./layouts";
 import { ROUTE_PATH } from "./constants";
-import { Forms, Login, NotFound } from "./pages";
+import { CreateForm, Forms, Login, NotFound } from "./pages";
 
 const Router = () => {
   const router = createBrowserRouter([
@@ -39,7 +39,7 @@ const Router = () => {
               path: ROUTE_PATH.app.forms,
             },
             {
-              element: <></>,
+              element: <CreateForm />,
               path: ROUTE_PATH.app.createForm,
             },
           ],
