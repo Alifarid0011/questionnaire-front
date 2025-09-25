@@ -1,49 +1,9 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 100;
-  src: url("/fonts/dana/woff2/DanaFaNum-Light.woff2") format("woff2"),
-    /* FF39+,Chrome36+, Opera24+*/ url("/fonts/dana/woff/DanaFaNum-Light.woff")
-      format("woff");
-  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-}
-
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 200;
-  src: url("/fonts/dana/woff2/DanaFaNum-Regular.woff2") format("woff2"),
-    /* FF39+,Chrome36+, Opera24+*/
-      url("/fonts/dana/woff/DanaFaNum-Regular.woff") format("woff");
-  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-}
-
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 300;
-  src: url("/fonts/dana/woff2/DanaFaNum-Medium.woff2") format("woff2"),
-    /* FF39+,Chrome36+, Opera24+*/ url("/fonts/dana/woff/DanaFaNum-Medium.woff")
-      format("woff");
-  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-}
-
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/dana/woff2/DanaFaNum-Bold.woff2") format("woff2"),
-    /* FF39+,Chrome36+, Opera24+*/ url("/fonts/dana/woff/DanaFaNum-Bold.woff")
-      format("woff");
-  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-}
-
-@font-face {
   font-family: "outfitDigits";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 100;
   src: url("/fonts/outfit/Outfit-Light.ttf") format("truetype");
   /* unicode-range: U+0030-0039; */
 }
@@ -51,7 +11,7 @@
 @font-face {
   font-family: "outfitDigits";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 200;
   src: url("/fonts/outfit/Outfit-Regular.ttf") format("truetype");
   /* unicode-range: U+0030-0039; */
 }
@@ -59,7 +19,7 @@
 @font-face {
   font-family: "outfitDigits";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 300;
   src: url("/fonts/outfit/Outfit-Medium.ttf") format("truetype");
   /* unicode-range: U+0030-0039; */
 }
@@ -67,11 +27,10 @@
 @font-face {
   font-family: "outfitDigits";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 400;
   src: url("/fonts/outfit/Outfit-Bold.ttf") format("truetype");
   /* unicode-range: U+0030-0039; */
 }
-
 
 @theme {
   --color-primary-10: #cff724;
@@ -153,7 +112,7 @@
 @layer base {
   body {
     @apply text-right font-[200];
-    font-family: dana, outfitDigits;
+    font-family:  outfitDigits;
   }
 }
 
