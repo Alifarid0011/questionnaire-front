@@ -1,2 +1,3 @@
-export * from "./auth/index";
-export * from "./notFound"
+export * from "./auth";
+export * from "./app";
+export * from "./notFound";

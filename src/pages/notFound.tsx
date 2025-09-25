@@ -9,7 +9,7 @@ export const NotFound = () => {
     <div className="flex items-center flex-col justify-center h-dvh gap-7">
       <Paragraph>this page does not exist</Paragraph>
       <Button
-        onClick={() => navigate(ROUTE_PATH.app.questions)}
+        onClick={() => navigate(ROUTE_PATH.app.forms)}
         className="p-3 h-12"
       >
         back to home

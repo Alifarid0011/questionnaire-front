@@ -18,7 +18,7 @@ export const Login: FC = () => {
   });
 
   const handleFormSubmit = () => {
-    navigate(ROUTE_PATH.app.questions);
+    navigate(ROUTE_PATH.app.forms);
   };
 
   return (

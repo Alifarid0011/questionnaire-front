@@ -1,9 +1,13 @@
-import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 
 import { AppProvider } from "./providers";
-import { AuthLayout } from "./layouts";
+import { AppLayout, AuthLayout } from "./layouts";
 import { ROUTE_PATH } from "./constants";
-import { Login, NotFound } from "./pages";
+import { Forms, Login, NotFound } from "./pages";
 
 const Router = () => {
   const router = createBrowserRouter([
@@ -24,6 +28,19 @@ const Router = () => {
             {
               element: <Login />,
               path: ROUTE_PATH.auth.login,
+            },
+          ],
+        },
+        {
+          element: <AppLayout />,
+          children: [
+            {
+              element: <Forms />,
+              path: ROUTE_PATH.app.forms,
+            },
+            {
+              element: <></>,
+              path: ROUTE_PATH.app.createForm,
             },
           ],
         },

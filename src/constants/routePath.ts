@@ -3,7 +3,8 @@ interface IRoutePath {
     login: string;
   };
   app: {
-    questions: string;
+    forms: string;
+    createForm: string;
   };
 
   notFound: string;
@@ -15,6 +16,7 @@ export const ROUTE_PATH: IRoutePath = {
     login: "/login",
   },
   app: {
-    questions: "/questions",
+    forms: "/forms",
+    createForm: "/create-form",
   },
 };
