@@ -2,7 +2,6 @@ import type { FC, HTMLAttributes, InputHTMLAttributes, ReactNode } from "react";
 
 import { cn } from "@/libs";
 import { Paragraph } from "@/components/ui/paragraph";
-import { GENERAL_CONSTANTS } from "@/constants";
 import type { GeneralTypes } from "@/types";
 import { Icons } from ".";
 
@@ -60,8 +59,8 @@ export const Input: FC<Props> = ({
         {startAdornment}
         <input
           className={cn(
-            "w-full px-3 focus-visible:border-black placeholder-gray-400 text-gray-950 h-16 focus-visible:outline-0",
-            GENERAL_CONSTANTS.TYPOGRAPHY_STYLES["caption3"],
+            "w-full placeholder:text-2xl text-2xl px-3 focus-visible:border-black placeholder-gray-400 text-gray-950 h-16 focus-visible:outline-0",
+            "w-full placeholder:text-2xl text-2xl px-3 focus-visible:border-black placeholder-gray-400 text-gray-950 h-16 focus-visible:outline-0",
             {
               "font-[600] font-[outfitDigits] placeholder:font-[dana] placeholder:font-[200] -tracking-tighter":
                 inputProps.type === "number",

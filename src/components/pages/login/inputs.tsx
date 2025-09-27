@@ -20,6 +20,7 @@ export const Inputs: FC<Props> = ({ control }) => {
             key={i}
             render={({ field, fieldState }) => (
               <Input
+                className="text-xl placeholder:text-xl"
                 key={i}
                 type={item.type}
                 errorMessage={fieldState.error?.message}

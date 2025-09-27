@@ -1,3 +1,3 @@
 export * from "./addNewForm";
-export * from "./recentForms";
-export * from "./categories";
+export * from "./formsList";
+export * from "./categoriesList";

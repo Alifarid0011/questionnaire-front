@@ -48,6 +48,16 @@ export type TParagraphComponents =
   | "span";
 
 // auth
-export type TLoginFormInputsName = "national_code" | "password" ;
+export type TLoginFormInputsName = "national_code" | "password";
 
 export type TLoginFormInitialValues = Record<TLoginFormInputsName, string>;
+
+// forms
+export type TQuestionTypes = "short" | "radio" | "checkbox";
+
+export interface IQuestion {
+  id: string;
+  type: TQuestionTypes;
+  label: string;
+  options: string[];
+}

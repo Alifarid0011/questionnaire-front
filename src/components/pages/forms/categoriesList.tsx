@@ -41,11 +41,11 @@ const CATEGORIES: ICategory[] = [
   { id: 30, title: "Category 30", description: "Description for category 30" },
 ];
 
-export const Categories = () => {
+export const CategoriesList = () => {
   return (
     <div>
       <Paragraph variant="title2" className="mb-3">
-        recent categories
+        categories
       </Paragraph>
 
       <Swiper spaceBetween={30} slidesPerView={5}>

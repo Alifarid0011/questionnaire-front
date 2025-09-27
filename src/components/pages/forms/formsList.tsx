@@ -41,11 +41,11 @@ const FORMS: IForms[] = [
   { id: 30, title: "Form 30", description: "Description for form 30" },
 ];
 
-export const RecentForms = () => {
+export const FormsList = () => {
   return (
     <div>
       <Paragraph variant="title2" className="mb-3">
-        recent forms
+        forms
       </Paragraph>
 
       <Swiper spaceBetween={30} slidesPerView={5}>
