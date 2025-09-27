@@ -5,8 +5,8 @@ export const TYPOGRAPHY_STYLES: Record<
   string
 > = {
   display1: "font-[400] text-[54px] leading-[72px]",
-  display2: "font-[400] text-5xl leading-16",
-  display3: "font-[400] text-[40px] leading-[52px]",
+  display2: "font-[300] text-5xl leading-16",
+  display3: "font-[200] text-[40px] leading-[52px]",
   title1: "font-[400] text-xl leading-[26px]",
   title2: "font-[300] text-xl leading-[26px]",
   title3: "font-[200] text-xl leading-[26px]",

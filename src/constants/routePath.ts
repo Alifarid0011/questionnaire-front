@@ -5,6 +5,7 @@ interface IRoutePath {
   app: {
     forms: string;
     createForm: string;
+    formFiller: string;
   };
 
   notFound: string;
@@ -18,5 +19,6 @@ export const ROUTE_PATH: IRoutePath = {
   app: {
     forms: "/forms",
     createForm: "/create-form",
+    formFiller: "/form-filler",
   },
 };

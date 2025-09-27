@@ -61,3 +61,15 @@ export interface IQuestion {
   label: string;
   options: string[];
 }
+
+export interface IQuestionForm {
+  title: string;
+  desc: string;
+  questions: IQuestion[];
+}
+
+export type TUserAnswer = {
+  id: string;
+  label: string;
+  answer: string | string[];
+};
