@@ -50,27 +50,3 @@ pnpm i
 pnpm dev
 
 ```
-
-## 📂 Project Structure
-
-src/
-┣ assets/ # Static assets
-┃ ┣ image/ # Images (e.g. png, jpg)
-┣ components/
-┃ ┣ layouts/ # Layout-related components (e.g. Navbar, Sidebar, Footer)
-┃ ┣ pages/ # Components used inside specific pages
-┃ ┗ ui/ # Reusable UI components (buttons, inputs, etc.)
-┣ constants/ # Application constants (config, enums, static values)
-┣ guards/ # Page guards / wrappers to protect routes (e.g. ProtectedRoute, PublicRoute)
-┣ hooks/ # Custom React hooks
-┣ layouts/ # Project-wide layout components (wrappers for pages)
-┣ libs/ # Shared libraries
-┣ pages/ # Route pages
-┣ providers/ # React Context providers
-┣ services/ # API calls for different pages / features
-┣ types/ # TypeScript types and interfaces
-┣ utils/ # Utility/helper functions
-┣ env.d.ts # TypeScript environment variable declarations
-┣ index.css # Base CSS (including Tailwind)
-┣ main.tsx # Entry point of the application
-┣ router.tsx # Application routes
