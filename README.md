@@ -1,73 +1,76 @@
-# React + TypeScript + Vite
+# Delegation Panel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Vite TypeScript Starter
 
-Currently, two official plugins are available:
+# A starter project built with **React + Vite + TypeScript** and managed with **pnpm**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- ⚡️ Vite for blazing fast development
+- ⚛️ React 19
+- 📘 TypeScript support
+- 📦 pnpm package manager
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## 📦 Prerequisites
 
-## Expanding the ESLint configuration
+Before running this project, make sure the following tools are installed on your system:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 1. Install Node.js
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Node.js is a JavaScript runtime environment that allows you to run React apps locally.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Download and install **LTS version** from [https://nodejs.org](https://nodejs.org)
+- After installation, verify it by running:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+node -v
+npm -v
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔧 Installation & Setup
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 1. Setup SSH Key (Optional)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+To access the repository via SSH, you need to create an SSH key and add it to your **git.2rado.xyz** account.
+
+```bash
+# Generate a new SSH key (press Enter for defaults)
+ssh-keygen
+
+# Copy the public key to clipboard
+cat ~/.ssh/id_rsa.pub
 ```
+
+### 2. Clone and Install and Start App
+
+```bash
+git clone git <your-repo-url>
+pnpm i
+pnpm dev
+
+```
+
+## 📂 Project Structure
+
+src/
+┣ assets/ # Static assets
+┃ ┣ image/ # Images (e.g. png, jpg)
+┣ components/
+┃ ┣ layouts/ # Layout-related components (e.g. Navbar, Sidebar, Footer)
+┃ ┣ pages/ # Components used inside specific pages
+┃ ┗ ui/ # Reusable UI components (buttons, inputs, etc.)
+┣ constants/ # Application constants (config, enums, static values)
+┣ guards/ # Page guards / wrappers to protect routes (e.g. ProtectedRoute, PublicRoute)
+┣ hooks/ # Custom React hooks
+┣ layouts/ # Project-wide layout components (wrappers for pages)
+┣ libs/ # Shared libraries
+┣ pages/ # Route pages
+┣ providers/ # React Context providers
+┣ services/ # API calls for different pages / features
+┣ types/ # TypeScript types and interfaces
+┣ utils/ # Utility/helper functions
+┣ env.d.ts # TypeScript environment variable declarations
+┣ index.css # Base CSS (including Tailwind)
+┣ main.tsx # Entry point of the application
+┣ router.tsx # Application routes
