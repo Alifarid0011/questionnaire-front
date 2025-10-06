@@ -30,19 +30,6 @@ npm -v
 
 ## 🔧 Installation & Setup
 
-### 1. Setup SSH Key (Optional)
-
-To access the repository via SSH, you need to create an SSH key and add it to your **git.2rado.xyz** account.
-
-```bash
-# Generate a new SSH key (press Enter for defaults)
-ssh-keygen
-
-# Copy the public key to clipboard
-cat ~/.ssh/id_rsa.pub
-```
-
-### 2. Clone and Install and Start App
 
 ```bash
 git clone git <your-repo-url>
